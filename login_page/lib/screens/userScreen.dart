@@ -5,17 +5,17 @@ import 'package:login_page/services/userService.dart';
 import 'package:login_page/utils.dart';
 import 'package:flutter/material.dart';
 
-class usersScreen extends StatefulWidget {
+class UsersScreen extends StatefulWidget {
   @override
-  _usersScreenState createState() => _usersScreenState();
+  _UsersScreenState createState() => _UsersScreenState();
 }
 
-class _usersScreenState extends State<usersScreen> {
+class _UsersScreenState extends State<UsersScreen> {
   bool loading = true;
   List<User> users = [];
 
   getUserList() async {
-    users = await userService().getUser();
+    users = await UserService().getUser();
     loading = false;
     setState(() {});
   }

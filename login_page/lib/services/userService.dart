@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:login_page/models/users.dart';
 import 'package:dio/dio.dart';
 
-class userService{
+class UserService{
   String baseUrl = "https://jsonplaceholder.typicode.com/";
   String users = "users";
 
