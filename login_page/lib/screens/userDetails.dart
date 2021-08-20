@@ -1,4 +1,5 @@
 import 'package:login_page/models/users.dart';
+import 'package:login_page/screens/MapScreen.dart';
 import 'package:login_page/screens/widget/cards.dart';
 import 'package:login_page/utils.dart';
 import 'package:flutter/material.dart';
@@ -48,7 +49,16 @@ class _UserDetailsState extends State<UserDetails> {
               onTap: () {
                 launchURL("https://${widget.user.website}");
               },
-              child: Text("web: ${widget.user.website}"))
+              child: Text("web: ${widget.user.website}")),
+          MaterialButton(
+            onPressed: (){
+              pushPage(context, 
+              MapSample(
+                userLocation: widget.user.address.geo,
+              ));
+            },
+            child: Text("Map view"),
+            ),
         ],
       ),
     );

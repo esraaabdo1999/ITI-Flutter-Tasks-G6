@@ -3,6 +3,8 @@
    <application
         android:label="login_page"
         android:icon="@mipmap/ic_launcher">
+        <meta-data android:name="com.google.android.geo.API_KEY"
+               android:value="AIzaSyCAteIkUtSZrR8E-8l5uMtLSMGmNK-Xl04"/>
         <!-- <uses-permission android:name="android.permission.INTERNET" /> -->
         <activity
             android:name=".MainActivity"

@@ -18,12 +18,14 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.7.0 <3.0.0"
+  sdk: ">=2.11.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
   dio: ^4.0.0
+  maps_launcher: ^2.0.1
+  google_maps_flutter: ^2.0.6
   url_launcher: ^6.0.9
 
 
